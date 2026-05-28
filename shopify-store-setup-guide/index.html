@@ -34,46 +34,10 @@
     
     /* Инъекция декораций стиля */
     
-    .card-style {
-      border: 1px solid rgba(15, 23, 42, 0.08) !important;
-      box-shadow: 0px 10px 30px rgba(15, 23, 42, 0.03) !important;
-      border-radius: 16px !important;
-      background-color: #FFFFFF !important; /* Белый фон карточки для идеальной контрастности */
-      transition: transform 0.2s, box-shadow 0.2s;
-    }
-    .card-style:hover { 
-      transform: translateY(-4px); 
-      box-shadow: 0px 20px 40px rgba(15, 23, 42, 0.08) !important; 
-    }
-    
-    /* Красивые подзаголовки шагов */
-    .prose h3 {
-      font-weight: 800;
-      color: #0F172A;
-      margin-top: 0 !important;
-      margin-bottom: 1rem;
-      font-size: 1.4rem;
-      border-bottom: 2px solid #F8FAFC;
-      padding-bottom: 0.5rem;
-    }
-    
-    /* Превращаем текстовые ссылки ИИ в сочные кнопки-акценты */
-    .prose a {
-      background-color: #2563EB !important; /* Ярко-синий акцент */
-      color: #FFFFFF !important; /* Белый текст кнопки */
-      padding: 10px 20px !important;
-      border-radius: 8px !important;
-      display: inline-block !important;
-      text-decoration: none !important;
-      font-weight: 600 !important;
-      margin-top: 10px !important;
-      box-shadow: 0px 4px 12px rgba(37, 99, 235, 0.2) !important;
-      transition: opacity 0.2s, transform 0.15s;
-    }
-    .prose a:hover {
-      opacity: 0.95;
-      transform: scale(1.02);
-    }
+    .card-style { border: 1px solid rgba(15, 23, 42, 0.08) !important; box-shadow: 0px 10px 30px rgba(15, 23, 42, 0.03) !important; border-radius: 16px !important; background-color: #FFFFFF !important; transition: transform 0.2s, box-shadow 0.2s; padding: 2rem; }
+    .card-style:hover { transform: translateY(-4px); box-shadow: 0px 20px 40px rgba(15, 23, 42, 0.08) !important; }
+    .prose h3 { font-weight: 800; color: #0F172A; margin-top: 0 !important; margin-bottom: 1rem; font-size: 1.4rem; border-bottom: 2px solid #F8FAFC; padding-bottom: 0.5rem; }
+    .prose a { background-color: #2563EB !important; color: #FFFFFF !important; padding: 10px 20px !important; border-radius: 8px !important; display: inline-block !important; text-decoration: none !important; font-weight: 600 !important; margin-top: 10px !important; box-shadow: 0px 4px 12px rgba(37, 99, 235, 0.15) !important; }
   
   </style>
 </head>
@@ -84,8 +48,6 @@
         <h1 class="text-4xl font-black mb-4">Shopify Store Setup Guide</h1>
         <p class="text-lg opacity-80">A complete guide to your Shopify store setup and launch plan. Includes checklists to ensure a professional Shopify store launch.</p>
       </header>
-      
-      <!-- Вставляем сгенерированный ИИ-агентом чек-лист, автоматически обернутый в карточки -->
       <div class="prose max-w-none">
         <div class="card-style p-8 mb-8"><h3>1. Техническая конфигурация и базовые настройки (Base Setup)</h3>
 <p>Ошибки в настройках валют, платежных шлюзов, налогов или зон доставки — это критический барьер для совершения покупки. Если клиент столкнется с отсутствием удобного способа оплаты или увидит некорректную стоимость доставки на этапе оформления заказа, вы потеряете до 70% потенциальной прибыли. Неправильно настроенный домен и отсутствие SSL-сертификата также мгновенно убивают доверие к бренду.</p>
