@@ -12,6 +12,14 @@
     /* Импорт шрифтов Google строго в теге style на первой строчке */
     @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@700&family=Inter:wght@400;500&display=swap');
     
+    /* ---- Глобальные CSS-переменные палитры ---- */
+    :root {
+      --clr-bg:      #F8FAFC;
+      --clr-text:    #0F172A;
+      --clr-primary: #3B82F6;
+      --clr-accent:  #2563EB;
+    }
+
     body {
       background-color: #F8FAFC;
       color: #0F172A;
@@ -30,6 +38,30 @@
     .prose p {
       margin-bottom: 1.25rem;
       opacity: 0.95;
+    }
+
+    /* ---- Базовая кнопка .btn-accent (всегда видима) ---- */
+    .btn-accent {
+      display: inline-block;
+      background-color: #2563EB !important;
+      color: #ffffff !important;
+      padding: 9px 20px;
+      border-radius: 8px;
+      font-weight: 700;
+      text-decoration: none !important;
+      font-size: 0.9rem;
+      border: none;
+      cursor: pointer;
+      transition: opacity 0.2s;
+    }
+    .btn-accent:hover { opacity: 0.85; }
+
+    /* ---- Карточки: гарантия контраста с фоном ---- */
+    .card-style {
+      /* Fallback если styleOverrides не перебивает — чуть темнее/светлее фона */
+      background-color: #3B82F6;
+      border: 1px solid rgba(128,128,128,0.15);
+      border-radius: 10px;
     }
     
     /* Инъекция декораций стиля */
