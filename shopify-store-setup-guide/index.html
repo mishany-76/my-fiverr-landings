@@ -23,7 +23,7 @@
       font-family: 'Outfit', sans-serif;
     }
     
-    /* Стилизация контента и ссылок на фрилансеров */
+    /* Стилизация контента и параграфов */
     .prose {
       line-height: 1.6;
     }
@@ -35,15 +35,45 @@
     /* Инъекция декораций стиля */
     
     .card-style {
-      border: 1px solid rgba(0,0,0,0.06) !important;
-      box-shadow: 0px 10px 30px rgba(0,0,0,0.03) !important;
-      border-radius: 12px !important;
-      background-color: #3B82F6 !important;
+      border: 1px solid rgba(15, 23, 42, 0.08) !important;
+      box-shadow: 0px 10px 30px rgba(15, 23, 42, 0.03) !important;
+      border-radius: 16px !important;
+      background-color: #FFFFFF !important; /* Белый фон карточки для идеальной контрастности */
       transition: transform 0.2s, box-shadow 0.2s;
     }
-    .card-style:hover { transform: translateY(-3px); box-shadow: 0px 18px 35px rgba(0,0,0,0.06) !important; }
-    .btn-accent { background-color: #2563EB !important; color: #FFFFFF !important; border-radius: 8px !important; border: none !important; font-weight: 600; padding: 10px 20px; display: inline-block; text-decoration: none; }
-    .prose a { color: #2563EB !important; font-weight: 600; text-decoration: underline !important; }
+    .card-style:hover { 
+      transform: translateY(-4px); 
+      box-shadow: 0px 20px 40px rgba(15, 23, 42, 0.08) !important; 
+    }
+    
+    /* Красивые подзаголовки шагов */
+    .prose h3 {
+      font-weight: 800;
+      color: #0F172A;
+      margin-top: 0 !important;
+      margin-bottom: 1rem;
+      font-size: 1.4rem;
+      border-bottom: 2px solid #F8FAFC;
+      padding-bottom: 0.5rem;
+    }
+    
+    /* Превращаем текстовые ссылки ИИ в сочные кнопки-акценты */
+    .prose a {
+      background-color: #2563EB !important; /* Ярко-синий акцент */
+      color: #FFFFFF !important; /* Белый текст кнопки */
+      padding: 10px 20px !important;
+      border-radius: 8px !important;
+      display: inline-block !important;
+      text-decoration: none !important;
+      font-weight: 600 !important;
+      margin-top: 10px !important;
+      box-shadow: 0px 4px 12px rgba(37, 99, 235, 0.2) !important;
+      transition: opacity 0.2s, transform 0.15s;
+    }
+    .prose a:hover {
+      opacity: 0.95;
+      transform: scale(1.02);
+    }
   
   </style>
 </head>
@@ -54,26 +84,28 @@
         <h1 class="text-4xl font-black mb-4">Shopify Store Setup Guide</h1>
         <p class="text-lg opacity-80">A complete guide to your Shopify store setup and launch plan. Includes checklists to ensure a professional Shopify store launch.</p>
       </header>
+      
+      <!-- Вставляем сгенерированный ИИ-агентом чек-лист, автоматически обернутый в карточки -->
       <div class="prose max-w-none">
-        <h3>1. Техническая конфигурация и базовые настройки (Base Setup)</h3>
+        <div class="card-style p-8 mb-8"><h3>1. Техническая конфигурация и базовые настройки (Base Setup)</h3>
 <p>Ошибки в настройках валют, платежных шлюзов, налогов или зон доставки — это критический барьер для совершения покупки. Если клиент столкнется с отсутствием удобного способа оплаты или увидит некорректную стоимость доставки на этапе оформления заказа, вы потеряете до 70% потенциальной прибыли. Неправильно настроенный домен и отсутствие SSL-сертификата также мгновенно убивают доверие к бренду.</p>
 <p><strong>Рекомендованный эксперт:</strong> <a href="https://www.fiverr.com/eshaal_fatima2/set-up-shopify-store" target="_blank">Eshaal Fatima</a> — выполнит базовую настройку и подготовит фундамент магазина.<br><strong>Цена:</strong> от $30</p>
 
-<h3>2. Профессиональный UI/UX дизайн и мобильная адаптация</h3>
+</div><div class="card-style p-8 mb-8"><h3>2. Профессиональный UI/UX дизайн и мобильная адаптация</h3>
 <p>Использование стандартных шаблонов без кастомизации делает ваш магазин "дешевым" в глазах покупателя. Основная ошибка — плохая верстка мобильной версии, где кнопки перекрывают текст, а изображения грузятся слишком долго. В нише Shopify store setup визуальное доверие напрямую коррелирует с конверсией: непрофессиональный дизайн увеличивает показатель отказов до 85% в первые секунды визита.</p>
 <p><strong>Рекомендованный эксперт:</strong> <a href="https://www.fiverr.com/dhrubo234/manage-your-shopify-store" target="_blank">Zobaer H.</a> — создаст премиальный дизайн и обеспечит профессиональный вид вашего бренда.<br><strong>Цена:</strong> от $150</p>
 
-<h3>3. Автоматизация дропшиппинга и управление каталогом</h3>
+</div><div class="card-style p-8 mb-8"><h3>3. Автоматизация дропшиппинга и управление каталогом</h3>
 <p>Ошибка в синхронизации цен и остатков с поставщиками приводит к ситуации, когда клиент оплачивает товар, которого нет в наличии. Это влечет за собой возвраты платежей (chargebacks) и блокировку аккаунтов в платежных системах. Без четкого Shopify launch plan, включающего автоматизацию обработки заказов, ваш бизнес станет неуправляемым при первых же 10 заказах в день.</p>
 <p><strong>Рекомендованный эксперт:</strong> <a href="https://www.fiverr.com/michaelo387/promote-and-manage-shopify-dropshipping-store-shopify-website-for-passive-income" target="_blank">Michael A</a> — настроит автоматизацию и поможет с продвижением для пассивного дохода.<br><strong>Цена:</strong> от $80</p>
 
-<h3>4. Кастомизация функционала и интеграция приложений</h3>
+</div><div class="card-style p-8 mb-8"><h3>4. Кастомизация функционала и интеграция приложений</h3>
 <p>Перегрузка магазина лишними приложениями замедляет скорость загрузки сайта, что негативно сказывается на SEO и пользовательском опыте. Однако отсутствие критически важных маркетинговых инструментов (upsells, перекрестные продажи, сбор email) снижает средний чек. Ошибка в коде при установке кастомных функций может привести к поломке корзины или формы регистрации.</p>
 <p><strong>Рекомендованный эксперт:</strong> <a href="https://www.fiverr.com/danishshaikh0_1/be-your-expert-shopify-store-setup-management-and-customized-shopify-website" target="_blank">Danish Shaikh</a> — эксперт по кастомизации и долгосрочному управлению магазином.<br><strong>Цена:</strong> от $50</p>
 
-<h3>5. Комплексный аудит перед запуском и маркетинговая стратегия</h3>
+</div><div class="card-style p-8 mb-8"><h3>5. Комплексный аудит перед запуском и маркетинговая стратегия</h3>
 <p>Запуск магазина без проработанной Shopify marketing strategies — это гарантированный провал рекламного бюджета. Ошибки в SEO-оптимизации мета-тегов и описаний товаров сделают ваш магазин невидимым для поисковиков. Профессиональный аудит должен включать проверку всех этапов воронки продаж: от клика по рекламе до страницы благодарности за покупку.</p>
-<p><strong>Рекомендованный эксперт:</strong> <a href="https://www.fiverr.com/dhrubo234/setup-design-and-manage-automated-profitable-shopify-store" target="_blank">Zobaer H.</a> — обеспечит полный цикл запуска "под ключ" с фокусом на прибыльность.<br><strong>Цена:</strong> от $150</p>
+<p><strong>Рекомендованный эксперт:</strong> <a href="https://www.fiverr.com/dhrubo234/setup-design-and-manage-automated-profitable-shopify-store" target="_blank">Zobaer H.</a> — обеспечит полный цикл запуска "под ключ" с фокусом на прибыльность.<br><strong>Цена:</strong> от $150</p></div>
       </div>
     </div>
   
